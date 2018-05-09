@@ -23,7 +23,9 @@
 
         // other libraries
         'rxjs': 'npm:rxjs',
-        'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+        'rxjs-compat': 'npm:rxjs-compat',
+        'rxjs/operators': 'npm:rxjs/operators/index.js',
+        'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
         'ng-semantic': './',
         'Prism': 'demo/vendor/prismjs'
     };
@@ -34,9 +36,13 @@
             defaultExtension: 'js'
         },
         rxjs: {
-            defaultExtension: 'js'
+            main: './index.js',
+            // defaultExtension: 'js'
         },
-        'angular2-in-memory-web-api': {
+        'rxjs-compat': {
+            // defaultExtension: 'js'
+        },
+        'angular-in-memory-web-api': {
             main: './index.js',
             defaultExtension: 'js'
         },

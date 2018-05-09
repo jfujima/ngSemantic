@@ -12,13 +12,21 @@ var config = {
   map: {
     "typescript": './node_modules/typescript/lib/typescript.js',
     "@angular": path.resolve('node_modules/@angular'),
-    "rxjs": path.resolve('node_modules/rxjs')
+    "rxjs": path.resolve('node_modules/rxjs'),
+    'rxjs/operators': path.resolve('node_modules/rxjs/operators/index'),
+    "rxjs-compat": path.resolve('node_modules/rxjs-compat')
   },
   paths: {
     '*': '*.js'
   },
   meta: {
     'node_modules/@angular/*': {build: false}
+  },
+  packages: {
+    rxjs: {
+      main: './index.js',
+      // defaultExtension: 'js'
+    }
   }
 };
 
