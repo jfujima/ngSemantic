@@ -8,12 +8,14 @@
       "dom"
     ],
     "noImplicitAny": true,
+    "noImplicitReturns": true,
     "declaration": true,
     "inlineSources": false,
     "inlineSourceMap": false,
     "removeComments": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "allowUnusedLabels": false
   },
   "typeRoots": [
     "./node_modules/@types"
